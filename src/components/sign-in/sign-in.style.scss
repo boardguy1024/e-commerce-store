@@ -1,7 +1,8 @@
 .sign-in {
-  width: 30vw;
+  width: 380px;
+}
 
-  .title {
-    background-color: red;
-  }
+.buttons {
+  display: flex;
+  justify-content: space-between;
 }
