@@ -3,7 +3,16 @@ import "firebase/firestore";
 import "firebase/auth";
 import { async } from "q";
 
-const config = {};
+const config = {
+  apiKey: "AIzaSyAWEua2_jBBrB--rtUP6ytOXXiflYpn6CM",
+  authDomain: "e-commerce-store-db.firebaseapp.com",
+  databaseURL: "https://e-commerce-store-db.firebaseio.com",
+  projectId: "e-commerce-store-db",
+  storageBucket: "",
+  messagingSenderId: "645127158742",
+  appId: "1:645127158742:web:c469b2f36130db8a9b4277",
+  measurementId: "G-VD0MELTF85"
+};
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
