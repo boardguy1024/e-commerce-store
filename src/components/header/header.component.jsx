@@ -8,13 +8,12 @@ import CartIcon from "../cart-icon/cart-icon.component";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import "./header.style.scss";
 
-const Header = ({ currentuser, hidden }) => (
+const Header = ({ currentUser, hidden }) => (
   <div className="header">
     <Link className="logo-container" to="/">
       <Logo className="logo" />
     </Link>
 
-    {console.log("currentuser???", currentuser)}
     <div className="options">
       <Link className="option" to="/shop">
         SHOP
@@ -23,7 +22,7 @@ const Header = ({ currentuser, hidden }) => (
         CONTACT
       </Link>
 
-      {currentuser ? (
+      {currentUser ? (
         <div className="option" onClick={() => auth.signOut()}>
           SIGN OUT
         </div>
