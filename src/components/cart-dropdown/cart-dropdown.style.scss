@@ -6,16 +6,16 @@
   flex-direction: column;
   padding: 20px;
   border: 1px solid black;
-  background-color: white;
+  background-color: WHITE;
   top: 80px;
   right: 30px;
   z-index: 5;
 
   .cart-items {
-    height: 240lx;
+    height: 240px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow: auto;
   }
 
   button {
